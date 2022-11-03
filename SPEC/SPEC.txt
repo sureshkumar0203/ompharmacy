@@ -1,0 +1,129 @@
+Admin login Credentils
+----------------------
+Email - care@healthcarehome.in
+Pass - 123
+
+Subadmin login Credentils
+------------------------
+Email - ms@bletindia.com
+Pass - 123
+
+User login Credentils
+---------------------
+Email / phone - trideep@bletindia.com / 7205821247
+Pass - 123
+
+Associate login Credentils
+-------------------------
+Email - trideep@bletindia.com
+Pass - 123
+
+Database & SMTP Setup
+-----------------------
+Check the changes in .ENV file
+Email - byaptibirliptajena@gmail.com
+Pass - 04062019
+
+Other Setup
+----------------
+ompharmacy/public/js/mopharma-validation.js ( change path )
+ompharmacy/public/admin/js/admin-custom.js ( change path )
+ompharmacy/config/constants.php ( change path )
+
+Subadmin Permission Setup
+--------------------------
+ompharmacy/app/Http/Middleware/PermissionManager.php (Line No - 31)
+In users table insert type column value = 1 
+Then add the permit to administrator
+
+SMS Configuration
+-----------------------
+C:\xampp\htdocs\ompharmacy\config->constants.php
+
+Payment Gateway Setup
+-----------------------
+Check in paymentsController.php file
+
+$working_key='5B42BCF5BB129BAA45B3FE69E0F4D9DA';//Shared by CCAVENUES
+$access_code='AVMU02GD64AW63UMWA';//Shared by CCAVENUES
+redirect_url = "https://www.healthcarehome.in/api/ccavResponseHandler"
+cancel_url = https://www.healthcarehome.in/api/ccavResponseHandler
+
+Live URL - $production_url='https://secure.ccavenue.com/transaction/transaction.do?command=initiateTransaction&encRequest='.$encrypted_data.'&access_code='.$access_code;
+Test URL - $production_url='https://test.ccavenue.com/transaction/transaction.do?command=initiateTransaction&encRequest='.$encrypted_data.'&access_code='.$access_code;
+
+
+Live merchant_id : 204814
+access_code : AVLY86GG37AJ70YLJA
+Working key: CCE0EAF2D710018EFEAFAAB1D9AAC14F
+
+Live Login credentials
+----------------------------------------------------
+https://dashboard.ccavenue.com/settings/apiKeys.do 
+login-acc_204814
+pass-samba@16
+
+
+Map Key generation 
+--------------------
+URL - https://developers.google.com/places/web-service/get-api-key
+
+Forgot password template path
+-----------------------------
+C:\xampp\htdocs\ompharmacy\vendor\laravel\framework\src\Illuminate\Mail\resources\views\html->message.blade.php
+
+
+------------------------------------------------------
+Admin from address & name set up
+------------------------------------------------------
+Path :- config/mail.php
+
+from email & name change in mail.php file
+
+
+SMTP set up
+-------------------------------------------------
+Click on this link "https://www.google.com/settings/security/lesssecureapps" to directly enable  "less ssecure apps" option .
+healthcareathome97@gmail.com / pos@2019
+Click on this link : https://myaccount.google.com/
+Then go to security link & enable "less ssecure apps" option
+
+
+Set Up the app file in .env file.It requireds at the time of reset password.
+------------------------------------------------------------------------------------
+APP_URL=http://192.168.0.170/ompharmacy
+
+
+User account active / inactive setup
+----------------------------
+C:\xampp\htdocs\ompharmacy\app\Http\Middleware->CheckUserLogin.php
+
+Subadmin Setup
+---------------
+C:\xampp\htdocs\ompharmacy\app\Http\Middleware->PermissionManager.php
+$segment = array_slice($urlExp,2); (Live server = 2)
+$segment = array_slice($urlExp,3); (Local server = 3)
+$segment = array_slice($urlExp,4); (Technolabs server = 4)
+
+Cron job
+--------
+Setup Path in server - /usr/local/bin/php /home/bletechnolabs/public_html/projects/ompharmacy/public/test.php
+
+curl https://www.bletechnolabs.com/projects/ompharmacy/pill-reminder
+
+https://www.cloudways.com/blog/laravel-cron-job-scheduling/
+
+FCM Om Pharma
+--------------
+Following URL - https://laravelcode.com/post/laravel-56-google-firebase-notification-in-android
+Login URL - https://console.firebase.google.com/u/0/?pli=1
+
+Project overview->project settings->general tab(Web api key path)
+Web API key - AIzaSyDOB0NCg36c_d81iNwVMK_bXslCuxZxNGU
+
+Project overview->project settings->cloud messageing tab(Web Server key path)
+Server key - AAAAc5V04-s:APA91bEL8n3lJqJ8Car1nlMAV4jj2vo7xkB8s9NQRRt9NFL0skzzPYg_fHf6FxHUGNCKBZHq3J2LMjGjtqa9_ShlEfXyAUBRXG1VRbgF0u8jCVG3TdtYcZYipeC0HMtLU2z7gg852tVF
+
+Project overview->project settings->cloud messageing tab(Legacy server key path)
+Legacy server key - AIzaSyCxL8GcEGeZZX5RFGaxC8UXBPZEk7fQ4gM
+

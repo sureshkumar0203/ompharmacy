@@ -1,0 +1,118 @@
+.banner-sec {
+    width: 100%;
+    /*float: left;*/
+   /* position: relative;*/
+	margin-top: 160px;
+}
+
+.banner-caption {
+    position: absolute;
+    z-index: 99999999;
+    margin-top: 15%;
+}
+.banner-caption h2 {
+    font-size: 36px;
+    color: #24353b;
+	padding-bottom:20px;
+	line-height:28px;
+}
+
+.banner-caption h4 {
+    font-size: 18px;
+    color: #24353b;
+	padding-bottom:20px;
+	line-height: 30px;
+}
+
+
+.banner-caption p {
+    font-size: 14px;
+    padding-right: 45px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+.banner-caption a {
+	display: inline-block;
+	padding: 9px 22px;
+	border-radius: 4px;
+	background: #e5322d;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #fff;
+	text-transform: uppercase;
+	-moz-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
+	-ms-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+
+
+
+.delay-1s {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+.delay-2s {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+.c-next {
+    position: absolute;
+    top: 345px;
+    right: 30px;
+    z-index: 111;
+    font-size: 0;
+    height: 50px;
+    width: 50px;
+    background-color: rgba(0,0,0,0.2);
+    background-image: url(../images/slider-right-arrow.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+	cursor:pointer;
+}
+.c-prev {
+    position: absolute;
+    top: 345px;
+    left: 30px;
+    z-index: 111;
+    font-size: 0;
+    height: 50px;
+    width: 50px;
+    background-color: rgba(0,0,0,0.2);
+    background-image: url(../images/slider-left-arrow.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+	cursor:pointer;
+}
+
+.c-next:hover {background-color: rgba(0,0,0,0.1);}
+
+.c-prev:hover{background-color: rgba(0,0,0,0.1);}
+
+.c-prev i, .c-next i {
+    font-size: 40px;
+    color: #fff;
+    line-height: 70px;
+}
+
+.owl-carousel.owl-drag .owl-item {
+	max-height:435px;
+	
+}
+
+@media (max-width:575.99px){
+ .banner-sec {
+    width: 100%;
+	margin-top:0px;
+}
+.banner-caption h2 {
+    font-size: 28px;
+}
+.banner-caption h4 {
+    font-size: 15px;
+    padding-bottom:10px;
+    line-height: 22px;
+}
+}

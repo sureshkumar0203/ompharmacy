@@ -1,0 +1,11 @@
+C-Pannel link- https://sg2plcpnl0243.prod.sin2.secureserver.net:2083/logout/?locale=en  
+Login-u9ht5psrzeyl
+Pass-Bam@nomo8
+
+
+Site URL : https://www.healthcarehome.in/
+Admin URL : https://www.healthcarehome.in/login
+Admin Login Credentials : care@healthcarehome.in / 123
+
+
+
